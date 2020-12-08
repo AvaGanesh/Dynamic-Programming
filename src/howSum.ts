@@ -9,9 +9,15 @@
 
 
     howSum(8,[2,3,5]) => [3,5]
+
+    m = targetSum
+    n = array length
+
+    Time complexity => O(n*m^2)
+    Space complexity => O(m^2)
 */
 interface MemoMap {
-    [key: number]: number[] | null | undefined
+    [key: number]: number[] | null
 }
 
 const howSum = (targetSum: number, numbers: number[], memo: MemoMap = {}): any => {
